@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderViewCell" rowHeight="56" id="LXI-aW-vHu" customClass="HeaderViewCell" customModule="RealEstate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LXI-aW-vHu" id="faC-9X-UvS">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FM-fI-uam">
+                        <rect key="frame" x="12" y="4" width="2" height="44"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="DBu-Ub-GsR"/>
+                            <constraint firstAttribute="width" constant="2" id="obG-1c-blX"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smC-ZX-4w9">
+                        <rect key="frame" x="22" y="14" width="281" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JR4-KI-QNA">
+                        <rect key="frame" x="311" y="7" width="90" height="38"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="3Cn-sx-f3m"/>
+                            <constraint firstAttribute="height" constant="38" id="4SZ-uZ-a3u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <state key="normal" title="View All">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JR4-KI-QNA" firstAttribute="centerY" secondItem="6FM-fI-uam" secondAttribute="centerY" id="2yI-jo-dDK"/>
+                    <constraint firstItem="JR4-KI-QNA" firstAttribute="leading" secondItem="smC-ZX-4w9" secondAttribute="trailing" constant="8" id="52A-Z0-4O3"/>
+                    <constraint firstItem="6FM-fI-uam" firstAttribute="leading" secondItem="faC-9X-UvS" secondAttribute="leading" constant="12" id="EDR-oD-JJx"/>
+                    <constraint firstAttribute="bottom" secondItem="6FM-fI-uam" secondAttribute="bottom" constant="4" id="JEu-hR-caf"/>
+                    <constraint firstItem="smC-ZX-4w9" firstAttribute="leading" secondItem="6FM-fI-uam" secondAttribute="trailing" constant="8" id="Ool-tf-tcd"/>
+                    <constraint firstItem="6FM-fI-uam" firstAttribute="top" secondItem="faC-9X-UvS" secondAttribute="top" constant="4" id="Ure-b7-mW7"/>
+                    <constraint firstAttribute="trailing" secondItem="JR4-KI-QNA" secondAttribute="trailing" constant="12" id="Wzg-PE-DDC"/>
+                    <constraint firstItem="smC-ZX-4w9" firstAttribute="centerY" secondItem="6FM-fI-uam" secondAttribute="centerY" id="ZIz-vY-TZk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headerLbl" destination="smC-ZX-4w9" id="S3y-uR-hK2"/>
+                <outlet property="viewAll" destination="JR4-KI-QNA" id="z7U-73-E03"/>
+            </connections>
+            <point key="canvasLocation" x="52.898550724637687" y="85.714285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.72057849377185312" blue="0.92287098277698865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
